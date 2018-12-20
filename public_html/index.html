@@ -20,13 +20,14 @@ and open the template in the editor.
         <div id="content">
             <input type="number" id="in_num1" /><br/>
             <input type="number" id="in_num2" /><br/>
-            <button id="bt_addizione" onclick="calcola('+')">+</button>
-            <button id="bt_sottrazione" onclick="calcola('-')">-</button>
+            <button id="bt_addizione" onclick="somma()">+</button>
+            <!-- con this.innerHTML passo come parametro il contenuto fra i tag del bottone stesso -->
+            <button id="bt_sottrazione" onclick="calcola(this.innerHTML)">-</button>
             <button id="bt_moltiplicazione" onclick="calcola('*')">*</button>
             <button id="bt_divisione" onclick="calcola('/')">/</button>
             <br/><br/>
             <div id="div_ris">0</div>
-
+            
         </div>
         <div id="footer">footer piè di pagina</div>
     </body>
